@@ -1,0 +1,146 @@
+[2025-04-16T21:00:10.264Z] Starting historical imagery capture for coordinates: 5.55551247,-0.26162416
+[2025-04-16T21:00:11.424Z] Navigating to Google Earth Web...
+[2025-04-16T21:00:24.632Z] Waiting for Google Earth to initialize...
+[2025-04-16T21:00:39.637Z] Zooming in for better detail...
+[2025-04-16T21:00:52.166Z] Clicking on history icon...
+[2025-04-16T21:00:59.761Z] Image size difference: 6.51%
+[2025-04-16T21:00:59.762Z] Historical mode activated successfully.
+[2025-04-16T21:00:59.762Z] Starting timeline exploration...
+[2025-04-16T21:01:01.004Z] Exploring position 1/30 at (1100, 90) - Estimated year: ~2015
+[2025-04-16T21:01:09.802Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:01:09.803Z] Position 1: Detected date text: "None", Formatted: est_2015
+[2025-04-16T21:01:09.804Z] Image size difference: 68.96%
+[2025-04-16T21:01:09.804Z] Found unique image at position 1 (68.96% different)
+[2025-04-16T21:01:09.808Z] Exploring position 2/30 at (1117, 90) - Estimated year: ~2015
+[2025-04-16T21:01:15.303Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:01:15.305Z] Position 2: Detected date text: "None", Formatted: est_2015
+[2025-04-16T21:01:15.305Z] Image size difference: 79.24%
+[2025-04-16T21:01:15.306Z] Found unique image at position 2 (79.24% different)
+[2025-04-16T21:01:15.307Z] Exploring position 3/30 at (1133, 90) - Estimated year: ~2015
+[2025-04-16T21:01:20.689Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:01:20.690Z] Position 3: Detected date text: "None", Formatted: est_2015
+[2025-04-16T21:01:20.691Z] Image size difference: 0.00%
+[2025-04-16T21:01:20.691Z] Exploring position 4/30 at (1150, 90) - Estimated year: ~2016
+[2025-04-16T21:01:26.555Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:01:26.556Z] Position 4: Detected date text: "None", Formatted: est_2016
+[2025-04-16T21:01:26.557Z] Image size difference: 110.83%
+[2025-04-16T21:01:26.558Z] Found unique image at position 4 (110.83% different)
+[2025-04-16T21:01:26.562Z] Exploring position 5/30 at (1167, 90) - Estimated year: ~2016
+[2025-04-16T21:01:32.299Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:01:32.300Z] Position 5: Detected date text: "None", Formatted: est_2016
+[2025-04-16T21:01:32.301Z] Image size difference: 0.00%
+[2025-04-16T21:01:32.302Z] Exploring position 6/30 at (1183, 90) - Estimated year: ~2016
+[2025-04-16T21:01:38.137Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:01:38.138Z] Position 6: Detected date text: "None", Formatted: est_2016
+[2025-04-16T21:01:38.139Z] Image size difference: 36.56%
+[2025-04-16T21:01:38.140Z] Found unique image at position 6 (36.56% different)
+[2025-04-16T21:01:38.144Z] Exploring position 7/30 at (1200, 90) - Estimated year: ~2017
+[2025-04-16T21:01:43.799Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:01:43.800Z] Position 7: Detected date text: "None", Formatted: est_2017
+[2025-04-16T21:01:43.801Z] Image size difference: 0.01%
+[2025-04-16T21:01:43.801Z] Exploring position 8/30 at (1217, 90) - Estimated year: ~2017
+[2025-04-16T21:01:49.635Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:01:49.636Z] Position 8: Detected date text: "None", Formatted: est_2017
+[2025-04-16T21:01:49.637Z] Image size difference: 13.32%
+[2025-04-16T21:01:49.638Z] Found unique image at position 8 (13.32% different)
+[2025-04-16T21:01:49.647Z] Exploring position 9/30 at (1233, 90) - Estimated year: ~2017
+[2025-04-16T21:01:55.171Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:01:55.172Z] Position 9: Detected date text: "None", Formatted: est_2017
+[2025-04-16T21:01:55.173Z] Image size difference: 0.00%
+[2025-04-16T21:01:55.174Z] Exploring position 10/30 at (1250, 90) - Estimated year: ~2018
+[2025-04-16T21:02:00.416Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:00.416Z] Position 10: Detected date text: "None", Formatted: est_2018
+[2025-04-16T21:02:00.417Z] Image size difference: 27.46%
+[2025-04-16T21:02:00.418Z] Found unique image at position 10 (27.46% different)
+[2025-04-16T21:02:00.422Z] Exploring position 11/30 at (1267, 90) - Estimated year: ~2018
+[2025-04-16T21:02:05.692Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:05.693Z] Position 11: Detected date text: "None", Formatted: est_2018
+[2025-04-16T21:02:05.694Z] Image size difference: 0.00%
+[2025-04-16T21:02:05.694Z] Exploring position 12/30 at (1283, 90) - Estimated year: ~2018
+[2025-04-16T21:02:10.960Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:10.961Z] Position 12: Detected date text: "None", Formatted: est_2018
+[2025-04-16T21:02:10.961Z] Image size difference: 9.76%
+[2025-04-16T21:02:10.962Z] Found unique image at position 12 (9.76% different)
+[2025-04-16T21:02:10.965Z] Exploring position 13/30 at (1300, 90) - Estimated year: ~2019
+[2025-04-16T21:02:16.275Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:16.277Z] Position 13: Detected date text: "None", Formatted: est_2019
+[2025-04-16T21:02:16.277Z] Image size difference: 0.00%
+[2025-04-16T21:02:16.278Z] Exploring position 14/30 at (1317, 90) - Estimated year: ~2019
+[2025-04-16T21:02:21.822Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:21.823Z] Position 14: Detected date text: "None", Formatted: est_2019
+[2025-04-16T21:02:21.824Z] Image size difference: 50.47%
+[2025-04-16T21:02:21.825Z] Found unique image at position 14 (50.47% different)
+[2025-04-16T21:02:21.835Z] Exploring position 15/30 at (1333, 90) - Estimated year: ~2019
+[2025-04-16T21:02:27.412Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:27.414Z] Position 15: Detected date text: "None", Formatted: est_2019
+[2025-04-16T21:02:27.415Z] Image size difference: 0.00%
+[2025-04-16T21:02:27.415Z] Exploring position 16/30 at (1350, 90) - Estimated year: ~2019
+[2025-04-16T21:02:32.917Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:32.918Z] Position 16: Detected date text: "None", Formatted: est_2019
+[2025-04-16T21:02:32.918Z] Image size difference: 9.08%
+[2025-04-16T21:02:32.919Z] Found unique image at position 16 (9.08% different)
+[2025-04-16T21:02:32.921Z] Exploring position 17/30 at (1367, 90) - Estimated year: ~2020
+[2025-04-16T21:02:38.567Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:38.568Z] Position 17: Detected date text: "None", Formatted: est_2020
+[2025-04-16T21:02:38.570Z] Image size difference: 0.00%
+[2025-04-16T21:02:38.576Z] Exploring position 18/30 at (1383, 90) - Estimated year: ~2020
+[2025-04-16T21:02:44.019Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:44.020Z] Position 18: Detected date text: "None", Formatted: est_2020
+[2025-04-16T21:02:44.021Z] Image size difference: 0.00%
+[2025-04-16T21:02:44.021Z] Exploring position 19/30 at (1400, 90) - Estimated year: ~2020
+[2025-04-16T21:02:49.588Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:49.590Z] Position 19: Detected date text: "None", Formatted: est_2020
+[2025-04-16T21:02:49.591Z] Image size difference: 9.02%
+[2025-04-16T21:02:49.591Z] Found unique image at position 19 (9.02% different)
+[2025-04-16T21:02:49.601Z] Exploring position 20/30 at (1417, 90) - Estimated year: ~2021
+[2025-04-16T21:02:55.123Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:02:55.125Z] Position 20: Detected date text: "None", Formatted: est_2021
+[2025-04-16T21:02:55.125Z] Image size difference: 0.00%
+[2025-04-16T21:02:55.126Z] Exploring position 21/30 at (1433, 90) - Estimated year: ~2021
+[2025-04-16T21:03:00.753Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:00.754Z] Position 21: Detected date text: "None", Formatted: est_2021
+[2025-04-16T21:03:00.755Z] Image size difference: 32.11%
+[2025-04-16T21:03:00.756Z] Found unique image at position 21 (32.11% different)
+[2025-04-16T21:03:00.766Z] Exploring position 22/30 at (1450, 90) - Estimated year: ~2021
+[2025-04-16T21:03:06.494Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:06.496Z] Position 22: Detected date text: "None", Formatted: est_2021
+[2025-04-16T21:03:06.496Z] Image size difference: 0.00%
+[2025-04-16T21:03:06.497Z] Exploring position 23/30 at (1467, 90) - Estimated year: ~2022
+[2025-04-16T21:03:12.050Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:12.051Z] Position 23: Detected date text: "None", Formatted: est_2022
+[2025-04-16T21:03:12.055Z] Image size difference: 9.27%
+[2025-04-16T21:03:12.056Z] Found unique image at position 23 (9.27% different)
+[2025-04-16T21:03:12.063Z] Exploring position 24/30 at (1483, 90) - Estimated year: ~2022
+[2025-04-16T21:03:17.750Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:17.752Z] Position 24: Detected date text: "None", Formatted: est_2022
+[2025-04-16T21:03:17.753Z] Image size difference: 0.00%
+[2025-04-16T21:03:17.754Z] Exploring position 25/30 at (1500, 90) - Estimated year: ~2022
+[2025-04-16T21:03:22.912Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:22.913Z] Position 25: Detected date text: "None", Formatted: est_2022
+[2025-04-16T21:03:22.913Z] Image size difference: 45.60%
+[2025-04-16T21:03:22.914Z] Found unique image at position 25 (45.60% different)
+[2025-04-16T21:03:22.916Z] Exploring position 26/30 at (1517, 90) - Estimated year: ~2022
+[2025-04-16T21:03:28.297Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:28.301Z] Position 26: Detected date text: "None", Formatted: est_2022
+[2025-04-16T21:03:28.309Z] Image size difference: 0.00%
+[2025-04-16T21:03:28.310Z] Exploring position 27/30 at (1533, 90) - Estimated year: ~2023
+[2025-04-16T21:03:33.815Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:33.816Z] Position 27: Detected date text: "None", Formatted: est_2023
+[2025-04-16T21:03:33.817Z] Image size difference: 97.83%
+[2025-04-16T21:03:33.817Z] Found unique image at position 27 (97.83% different)
+[2025-04-16T21:03:33.820Z] Exploring position 28/30 at (1550, 90) - Estimated year: ~2023
+[2025-04-16T21:03:39.379Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:39.380Z] Position 28: Detected date text: "None", Formatted: est_2023
+[2025-04-16T21:03:39.381Z] Image size difference: 0.00%
+[2025-04-16T21:03:39.381Z] Exploring position 29/30 at (1567, 90) - Estimated year: ~2023
+[2025-04-16T21:03:44.961Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:44.962Z] Position 29: Detected date text: "None", Formatted: est_2023
+[2025-04-16T21:03:44.963Z] Image size difference: 14.11%
+[2025-04-16T21:03:44.963Z] Found unique image at position 29 (14.11% different)
+[2025-04-16T21:03:44.966Z] Exploring position 30/30 at (1583, 90) - Estimated year: ~2024
+[2025-04-16T21:03:50.844Z] OCR error: worker.loadLanguage is not a function
+[2025-04-16T21:03:50.846Z] Position 30: Detected date text: "None", Formatted: est_2024
+[2025-04-16T21:03:50.846Z] Image size difference: 0.00%
+[2025-04-16T21:03:50.985Z] Found 15 unique historical images.
+[2025-04-16T21:03:50.986Z] Capture complete. Enhanced report generated.
+[2025-04-16T21:03:51.769Z] Browser closed

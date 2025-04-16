@@ -1,0 +1,601 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Historical Imagery Results - Accra, Ghana</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body { 
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #333;
+                background-color: #f5f5f5;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            header {
+                background-color: #2c3e50;
+                color: white;
+                padding: 20px;
+                margin-bottom: 30px;
+                border-radius: 5px;
+            }
+            h1 { margin: 0; font-size: 28px; }
+            h2 { color: #2c3e50; margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+            .metadata {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+                margin-bottom: 30px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .metadata dl {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                gap: 10px;
+            }
+            .metadata dt {
+                font-weight: bold;
+                color: #555;
+            }
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+            }
+            .image-card {
+                background-color: white;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+            .image-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+            .image-container {
+                position: relative;
+                overflow: hidden;
+                height: 200px;
+            }
+            .image-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+            .image-card:hover .image-container img {
+                transform: scale(1.05);
+            }
+            .image-details {
+                padding: 15px;
+            }
+            .date-badge {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: rgba(0,0,0,0.7);
+                color: white;
+                padding: 5px 10px;
+                border-radius: 3px;
+                font-size: 12px;
+            }
+            .image-details h3 {
+                margin: 0 0 10px 0;
+                font-size: 16px;
+                color: #2c3e50;
+            }
+            .image-meta {
+                color: #666;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            .image-actions {
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .image-actions a {
+                background-color: #3498db;
+                color: white;
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 3px;
+                font-size: 12px;
+                transition: background-color 0.3s ease;
+            }
+            .image-actions a:hover {
+                background-color: #2980b9;
+            }
+            .timeline {
+                position: relative;
+                margin: 40px 0;
+                height: 4px;
+                background-color: #ddd;
+            }
+            .timeline-marker {
+                position: absolute;
+                top: -8px;
+                width: 20px;
+                height: 20px;
+                background-color: #3498db;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+            .timeline-marker:hover {
+                transform: scale(1.3);
+            }
+            .timeline-year {
+                position: absolute;
+                top: 15px;
+                transform: translateX(-50%);
+                font-size: 12px;
+                color: #666;
+            }
+            .lightbox {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.9);
+                z-index: 999;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .lightbox img {
+                max-width: 90%;
+                max-height: 80%;
+                margin-bottom: 20px;
+            }
+            .lightbox-caption {
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+            .close-lightbox {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                color: white;
+                font-size: 30px;
+                cursor: pointer;
+            }
+            footer {
+                text-align: center;
+                margin-top: 50px;
+                padding: 20px;
+                color: #666;
+                font-size: 14px;
+            }
+            @media (max-width: 768px) {
+                .metadata dl {
+                    grid-template-columns: 1fr;
+                }
+                .image-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Historical Satellite Imagery: Accra, Ghana</h1>
+                <p>Captured on 4/16/2025 at 9:03:50 PM</p>
+            </header>
+            
+            <section class="metadata">
+                <h2>Capture Metadata</h2>
+                <dl>
+                    <dt>Location Coordinates</dt>
+                    <dd>5.55551247,-0.26162416</dd>
+                    
+                    <dt>Target Date Range</dt>
+                    <dd>2019 to 2025</dd>
+                    
+                    <dt>Actual Date Range Found</dt>
+                    <dd>est_2015 to est_2023</dd>
+                    
+                    <dt>Total Unique Images</dt>
+                    <dd>15</dd>
+                    
+                    <dt>Capture Duration</dt>
+                    <dd>221 seconds</dd>
+                    
+                    <dt>Zoom Level</dt>
+                    <dd>250a (+ 8 additional steps)</dd>
+                </dl>
+            </section>
+            
+            <h2>Timeline Visualization</h2>
+            <div class="timeline">
+                
+                        <div class="timeline-marker" style="left: 0%;" 
+                             onclick="document.getElementById('card-0').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2015</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 3.4000000000000004%;" 
+                             onclick="document.getElementById('card-1').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2015</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 10%;" 
+                             onclick="document.getElementById('card-2').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2016</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 16.6%;" 
+                             onclick="document.getElementById('card-3').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2016</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 23.400000000000002%;" 
+                             onclick="document.getElementById('card-4').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2017</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 30%;" 
+                             onclick="document.getElementById('card-5').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2018</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 36.6%;" 
+                             onclick="document.getElementById('card-6').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2018</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 43.4%;" 
+                             onclick="document.getElementById('card-7').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2019</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 50%;" 
+                             onclick="document.getElementById('card-8').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2019</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 60%;" 
+                             onclick="document.getElementById('card-9').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2020</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 66.60000000000001%;" 
+                             onclick="document.getElementById('card-10').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2021</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 73.4%;" 
+                             onclick="document.getElementById('card-11').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2022</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 80%;" 
+                             onclick="document.getElementById('card-12').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2022</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 86.6%;" 
+                             onclick="document.getElementById('card-13').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2023</div>
+                        </div>
+                    
+                        <div class="timeline-marker" style="left: 93.4%;" 
+                             onclick="document.getElementById('card-14').scrollIntoView({behavior: 'smooth'})">
+                            <div class="timeline-year">2023</div>
+                        </div>
+                    
+            </div>
+            
+            <h2>Historical Images (15)</h2>
+            <div class="image-grid">
+                
+                    <div class="image-card" id="card-0">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2015.png" alt="Historical Image 1">
+                            <div class="date-badge">est_2015</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2015</h3>
+                            <div class="image-meta">Timeline Position: 1 (X: 1100)</div>
+                            <div class="image-meta">Estimated Year: 2015</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2015.png', 'est_2015'); return false;">View Full Size</a>
+                                <a href="date_display_1.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-1">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2015.png" alt="Historical Image 2">
+                            <div class="date-badge">est_2015</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2015</h3>
+                            <div class="image-meta">Timeline Position: 2 (X: 1117)</div>
+                            <div class="image-meta">Estimated Year: 2015</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2015.png', 'est_2015'); return false;">View Full Size</a>
+                                <a href="date_display_2.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-2">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2016.png" alt="Historical Image 3">
+                            <div class="date-badge">est_2016</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2016</h3>
+                            <div class="image-meta">Timeline Position: 4 (X: 1150)</div>
+                            <div class="image-meta">Estimated Year: 2016</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2016.png', 'est_2016'); return false;">View Full Size</a>
+                                <a href="date_display_4.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-3">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2016.png" alt="Historical Image 4">
+                            <div class="date-badge">est_2016</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2016</h3>
+                            <div class="image-meta">Timeline Position: 6 (X: 1183)</div>
+                            <div class="image-meta">Estimated Year: 2016</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2016.png', 'est_2016'); return false;">View Full Size</a>
+                                <a href="date_display_6.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-4">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2017.png" alt="Historical Image 5">
+                            <div class="date-badge">est_2017</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2017</h3>
+                            <div class="image-meta">Timeline Position: 8 (X: 1217)</div>
+                            <div class="image-meta">Estimated Year: 2017</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2017.png', 'est_2017'); return false;">View Full Size</a>
+                                <a href="date_display_8.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-5">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2018.png" alt="Historical Image 6">
+                            <div class="date-badge">est_2018</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2018</h3>
+                            <div class="image-meta">Timeline Position: 10 (X: 1250)</div>
+                            <div class="image-meta">Estimated Year: 2018</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2018.png', 'est_2018'); return false;">View Full Size</a>
+                                <a href="date_display_10.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-6">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2018.png" alt="Historical Image 7">
+                            <div class="date-badge">est_2018</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2018</h3>
+                            <div class="image-meta">Timeline Position: 12 (X: 1283)</div>
+                            <div class="image-meta">Estimated Year: 2018</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2018.png', 'est_2018'); return false;">View Full Size</a>
+                                <a href="date_display_12.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-7">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2019.png" alt="Historical Image 8">
+                            <div class="date-badge">est_2019</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2019</h3>
+                            <div class="image-meta">Timeline Position: 14 (X: 1317)</div>
+                            <div class="image-meta">Estimated Year: 2019</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2019.png', 'est_2019'); return false;">View Full Size</a>
+                                <a href="date_display_14.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-8">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2019.png" alt="Historical Image 9">
+                            <div class="date-badge">est_2019</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2019</h3>
+                            <div class="image-meta">Timeline Position: 16 (X: 1350)</div>
+                            <div class="image-meta">Estimated Year: 2019</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2019.png', 'est_2019'); return false;">View Full Size</a>
+                                <a href="date_display_16.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-9">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2020.png" alt="Historical Image 10">
+                            <div class="date-badge">est_2020</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2020</h3>
+                            <div class="image-meta">Timeline Position: 19 (X: 1400)</div>
+                            <div class="image-meta">Estimated Year: 2020</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2020.png', 'est_2020'); return false;">View Full Size</a>
+                                <a href="date_display_19.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-10">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2021.png" alt="Historical Image 11">
+                            <div class="date-badge">est_2021</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2021</h3>
+                            <div class="image-meta">Timeline Position: 21 (X: 1433)</div>
+                            <div class="image-meta">Estimated Year: 2021</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2021.png', 'est_2021'); return false;">View Full Size</a>
+                                <a href="date_display_21.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-11">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2022.png" alt="Historical Image 12">
+                            <div class="date-badge">est_2022</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2022</h3>
+                            <div class="image-meta">Timeline Position: 23 (X: 1467)</div>
+                            <div class="image-meta">Estimated Year: 2022</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2022.png', 'est_2022'); return false;">View Full Size</a>
+                                <a href="date_display_23.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-12">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2022.png" alt="Historical Image 13">
+                            <div class="date-badge">est_2022</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2022</h3>
+                            <div class="image-meta">Timeline Position: 25 (X: 1500)</div>
+                            <div class="image-meta">Estimated Year: 2022</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2022.png', 'est_2022'); return false;">View Full Size</a>
+                                <a href="date_display_25.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-13">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2023.png" alt="Historical Image 14">
+                            <div class="date-badge">est_2023</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2023</h3>
+                            <div class="image-meta">Timeline Position: 27 (X: 1533)</div>
+                            <div class="image-meta">Estimated Year: 2023</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2023.png', 'est_2023'); return false;">View Full Size</a>
+                                <a href="date_display_27.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="image-card" id="card-14">
+                        <div class="image-container">
+                            <img src="accra__ghana_est_2023.png" alt="Historical Image 15">
+                            <div class="date-badge">est_2023</div>
+                        </div>
+                        <div class="image-details">
+                            <h3>Historical Image: est_2023</h3>
+                            <div class="image-meta">Timeline Position: 29 (X: 1567)</div>
+                            <div class="image-meta">Estimated Year: 2023</div>
+                            <div class="image-meta">Detected Date: Unknown</div>
+                            <div class="image-actions">
+                                <a href="#" onclick="openLightbox('accra__ghana_est_2023.png', 'est_2023'); return false;">View Full Size</a>
+                                <a href="date_display_29.png" target="_blank">View Date Display</a>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            
+            <div class="lightbox" id="lightbox">
+                <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+                <img id="lightbox-img" src="" alt="Full size image">
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+            
+            <footer>
+                <p>Generated by Google Earth Historical Imagery Capture Tool</p>
+                <p>Coordinates: 5.55551247,-0.26162416 &bull; Generated: 2025-04-16T21:03:50.982Z</p>
+            </footer>
+        </div>
+        
+        <script>
+            function openLightbox(imageSrc, caption) {
+                document.getElementById('lightbox').style.display = 'flex';
+                document.getElementById('lightbox-img').src = imageSrc;
+                document.getElementById('lightbox-caption').textContent = caption;
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeLightbox() {
+                document.getElementById('lightbox').style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            
+            // Close lightbox when clicking outside the image
+            document.getElementById('lightbox').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeLightbox();
+                }
+            });
+            
+            // Close lightbox with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                }
+            });
+        </script>
+    </body>
+    </html>
+    
