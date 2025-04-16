@@ -1,0 +1,63 @@
+[2025-04-16T20:39:53.245Z] Starting historical imagery capture for coordinates: 5.55551247,-0.26162416
+[2025-04-16T20:39:54.238Z] Navigating to Google Earth Web...
+[2025-04-16T20:40:08.133Z] Waiting for Google Earth to initialize...
+[2025-04-16T20:40:23.138Z] Zooming in for better detail...
+[2025-04-16T20:40:35.630Z] Clicking on history icon...
+[2025-04-16T20:40:43.364Z] Image size difference: 7.72%
+[2025-04-16T20:40:43.367Z] Historical mode activated successfully.
+[2025-04-16T20:40:43.368Z] Starting timeline exploration...
+[2025-04-16T20:40:44.640Z] Exploring position 1/20 at (1200, 90)
+[2025-04-16T20:40:49.915Z] Image size difference: 25.56%
+[2025-04-16T20:40:49.922Z] Found unique image at position 1
+[2025-04-16T20:40:49.927Z] Exploring position 2/20 at (1220, 90)
+[2025-04-16T20:40:55.107Z] Image size difference: 13.38%
+[2025-04-16T20:40:55.109Z] Found unique image at position 2
+[2025-04-16T20:40:55.112Z] Exploring position 3/20 at (1240, 90)
+[2025-04-16T20:41:00.285Z] Image size difference: 0.00%
+[2025-04-16T20:41:00.286Z] Exploring position 4/20 at (1260, 90)
+[2025-04-16T20:41:05.227Z] Image size difference: 27.55%
+[2025-04-16T20:41:05.231Z] Found unique image at position 4
+[2025-04-16T20:41:05.234Z] Exploring position 5/20 at (1280, 90)
+[2025-04-16T20:41:10.096Z] Image size difference: 9.66%
+[2025-04-16T20:41:10.097Z] Found unique image at position 5
+[2025-04-16T20:41:10.099Z] Exploring position 6/20 at (1300, 90)
+[2025-04-16T20:41:14.929Z] Image size difference: 0.00%
+[2025-04-16T20:41:14.930Z] Exploring position 7/20 at (1320, 90)
+[2025-04-16T20:41:20.120Z] Image size difference: 50.73%
+[2025-04-16T20:41:20.122Z] Found unique image at position 7
+[2025-04-16T20:41:20.124Z] Exploring position 8/20 at (1340, 90)
+[2025-04-16T20:41:25.284Z] Image size difference: 0.01%
+[2025-04-16T20:41:25.289Z] Exploring position 9/20 at (1360, 90)
+[2025-04-16T20:41:30.384Z] Image size difference: 9.21%
+[2025-04-16T20:41:30.386Z] Found unique image at position 9
+[2025-04-16T20:41:30.388Z] Exploring position 10/20 at (1380, 90)
+[2025-04-16T20:41:35.399Z] Image size difference: 0.00%
+[2025-04-16T20:41:35.400Z] Exploring position 11/20 at (1400, 90)
+[2025-04-16T20:41:40.516Z] Image size difference: 9.03%
+[2025-04-16T20:41:40.517Z] Found unique image at position 11
+[2025-04-16T20:41:40.529Z] Exploring position 12/20 at (1420, 90)
+[2025-04-16T20:41:45.865Z] Image size difference: 32.26%
+[2025-04-16T20:41:45.868Z] Found unique image at position 12
+[2025-04-16T20:41:45.870Z] Exploring position 13/20 at (1440, 90)
+[2025-04-16T20:41:51.187Z] Image size difference: 0.00%
+[2025-04-16T20:41:51.188Z] Exploring position 14/20 at (1460, 90)
+[2025-04-16T20:41:56.343Z] Image size difference: 9.29%
+[2025-04-16T20:41:56.350Z] Found unique image at position 14
+[2025-04-16T20:41:56.354Z] Exploring position 15/20 at (1480, 90)
+[2025-04-16T20:42:01.535Z] Image size difference: 0.00%
+[2025-04-16T20:42:01.536Z] Exploring position 16/20 at (1500, 90)
+[2025-04-16T20:42:06.288Z] Image size difference: 45.68%
+[2025-04-16T20:42:06.292Z] Found unique image at position 16
+[2025-04-16T20:42:06.296Z] Exploring position 17/20 at (1520, 90)
+[2025-04-16T20:42:11.205Z] Image size difference: 0.01%
+[2025-04-16T20:42:11.206Z] Exploring position 18/20 at (1540, 90)
+[2025-04-16T20:42:16.427Z] Image size difference: 98.08%
+[2025-04-16T20:42:16.454Z] Found unique image at position 18
+[2025-04-16T20:42:16.460Z] Exploring position 19/20 at (1560, 90)
+[2025-04-16T20:42:21.718Z] Image size difference: 14.25%
+[2025-04-16T20:42:21.719Z] Found unique image at position 19
+[2025-04-16T20:42:21.721Z] Exploring position 20/20 at (1580, 90)
+[2025-04-16T20:42:26.940Z] Image size difference: 0.00%
+[2025-04-16T20:42:26.997Z] Found 12 unique historical images.
+[2025-04-16T20:42:27.016Z] Capture complete. Report generated.
+[2025-04-16T20:42:28.007Z] Browser closed

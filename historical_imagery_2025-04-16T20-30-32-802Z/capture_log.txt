@@ -1,0 +1,24 @@
+[2025-04-16T20:30:32.804Z] Starting historical imagery capture for coordinates: 5.55551247,-0.26162416
+[2025-04-16T20:30:34.008Z] Navigating to Google Earth Web with enhanced zoom...
+[2025-04-16T20:30:34.010Z] Opening URL: https://earth.google.com/web/@5.55551247,-0.26162416,250a,35y,0h,0t,0r
+[2025-04-16T20:30:50.537Z] Waiting for Google Earth to initialize...
+[2025-04-16T20:31:05.547Z] Zooming in further (8 steps)...
+[2025-04-16T20:31:18.241Z] Clicking on history icon at (520, 37)...
+[2025-04-16T20:31:19.685Z] Clicked history icon
+[2025-04-16T20:31:25.871Z] Image size difference: 6.08%
+[2025-04-16T20:31:25.872Z] Visual change detected (6.08%). Historical mode likely activated.
+[2025-04-16T20:31:26.036Z] Starting timeline exploration - clicking various points to find available dates
+[2025-04-16T20:31:27.358Z] Clicking timeline position 1/30 at (400, 90)
+[2025-04-16T20:31:32.694Z] Image size difference: 0.01%
+[2025-04-16T20:31:32.695Z] Position 1: No significant change (0.01%). Same date as previous.
+[2025-04-16T20:31:32.696Z] Clicking timeline position 2/30 at (440, 90)
+[2025-04-16T20:31:38.026Z] Image size difference: 0.03%
+[2025-04-16T20:31:38.027Z] Position 2: No significant change (0.03%). Same date as previous.
+[2025-04-16T20:31:38.027Z] Clicking timeline position 3/30 at (480, 90)
+[2025-04-16T20:31:43.414Z] Image size difference: 0.04%
+[2025-04-16T20:31:43.416Z] Position 3: No significant change (0.04%). Same date as previous.
+[2025-04-16T20:31:43.416Z] Clicking timeline position 4/30 at (520, 90)
+[2025-04-16T20:31:48.662Z] Image size difference: 35.80%
+[2025-04-16T20:31:48.664Z] Position 4: Significant change detected (35.80%). Likely a different date.
+[2025-04-16T20:31:48.669Z] ERROR: Assignment to constant variable.
+[2025-04-16T20:31:50.740Z] Browser closed
